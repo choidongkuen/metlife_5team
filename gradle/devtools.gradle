@@ -1,0 +1,13 @@
+allprojects {
+    dependencies {
+        compileOnly "org.projectlombok:lombok:${lombokVersion}"
+        annotationProcessor "org.projectlombok:lombok"
+
+        implementation "io.jsonwebtoken:jjwt-api:${jwtVersion}"
+        runtimeOnly "io.jsonwebtoken:jjwt-impl:${jwtVersion}"
+        runtimeOnly "io.jsonwebtoken:jjwt-jackson:${jwtVersion}"
+
+        testCompileOnly "org.projectlombok:lombok:${lombokVersion}"
+        testAnnotationProcessor "org.projectlombok:lombok"
+    }
+}

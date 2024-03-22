@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  mysql:
+    image: mysql
+    container_name: metlife5_mysql
+    environment:
+     MYSQL_DATABASE: metlife5_db
+     MYSQL_ROOT_PASSWORD: 1234
+    ports:
+      - 3222:3306
+
+  redis:
+    image: redis
+    container_name: metlife5_redis
+    ports:
+      - 6370:6379
+    environment:
+      REDIS_PASSWORD: 1234

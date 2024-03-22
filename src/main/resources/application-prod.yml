@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: metlife_team5
+
+  config:
+    activate:
+      on-profile: "prod"
+
+
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url:
+    username:
+    password:
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        format_sql: true
+        default_batch_fetch_size: 100
+
+
+logging:
+  level:
+    org.hibernate.SQL: info
+    org.hibernate.type: info
