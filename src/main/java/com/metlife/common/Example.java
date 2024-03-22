@@ -20,7 +20,7 @@ public class Example {
     /**
      *
      *  {
-     *      "responseMessage": "SUCCESS",
+     *      "message": "SUCCESS",
      *      "response": {
      *        "id": "1234"
      *     }
