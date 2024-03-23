@@ -1,6 +1,6 @@
-package com.metlife.common.exception;
+package com.metlife.core.exception;
 
-import com.metlife.common.response.DataResponse;
+import com.metlife.core.response.DataResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;

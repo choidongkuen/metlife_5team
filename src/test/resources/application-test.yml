@@ -1,0 +1,36 @@
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:test;MODE=MySQL;DATABASE_TO_LOWER=TRUE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  security:
+    oauth2:
+      client:
+        registration:
+          kakao:
+            client-id: client-id
+            client-secret: client-secret
+            redirect-uri: redirect-uri
+            client-authentication-method: POST
+            authorization-grant-type: authorization_code
+            scope:
+
+        provider:
+          kakao:
+            authorization-uri: https://kauth.kakao.com/oauth/authorize
+            token-uri: https://kauth.kaka.com/oauth/token
+            user-info-uri: https://kapi.kakao.com/v2/user/me
+            user-name-attribute: id
+
+jwt:
+  bearer: Bearer
+  secret: secret-key
+  access:
+    expiration: 2000000
+    header: Authorization
+  refresh:
+    expiration: 2000000
+    header: Authorization-refresh

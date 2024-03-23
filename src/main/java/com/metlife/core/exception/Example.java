@@ -1,8 +1,8 @@
-package com.metlife.common;
+package com.metlife.core.exception;
 
-import com.metlife.common.exception.CustomException;
-import com.metlife.common.exception.ErrorCode;
-import com.metlife.common.response.DataResponse;
+import com.metlife.core.exception.CustomException;
+import com.metlife.core.exception.ErrorCode;
+import com.metlife.core.response.DataResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

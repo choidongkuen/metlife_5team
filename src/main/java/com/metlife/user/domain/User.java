@@ -7,10 +7,14 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Getter
+@Builder
+@AllArgsConstructor
 @Entity(name = "users")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class User extends BaseTimeEntity {
@@ -19,10 +23,15 @@ public class User extends BaseTimeEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "oauth_id", nullable = false, unique = true)
+    @Column(name = "oauth_id", unique = true)
     private String oauthId;
 
-    @Column(name = "name", nullable = false, unique = true)
-    private String name;
+    @Column(name = "email", unique = true)
+    private String email;
 
+    @Column(name = "password", unique = true)
+    private String password;
+
+    @Column(name = "name", unique = true)
+    private String name;
 }

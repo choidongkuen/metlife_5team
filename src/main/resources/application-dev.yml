@@ -1,7 +1,4 @@
 spring:
-  application:
-    name: metlife_team5
-
   config:
     activate:
       on-profile: "dev"
@@ -19,7 +16,8 @@ spring:
   jpa:
     show-sql: true
     hibernate:
-      ddl-auto: update
+      ddl-auto: create†®
+
     properties:
       hibernate:
         format_sql: true

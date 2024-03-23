@@ -1,0 +1,11 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: metlife_team5
+
+  profiles:
+    group:
+      "dev": "dev, auth, redis"
+      "prod": "prod, auth, redis"

@@ -1,7 +1,4 @@
 spring:
-  application:
-    name: metlife_team5
-
   config:
     activate:
       on-profile: "prod"

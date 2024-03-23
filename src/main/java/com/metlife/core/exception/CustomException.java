@@ -1,4 +1,4 @@
-package com.metlife.common.exception;
+package com.metlife.core.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,6 +1,6 @@
-package com.metlife.common.response;
+package com.metlife.core.response;
 
-import com.metlife.common.exception.ErrorCode;
+import com.metlife.core.exception.ErrorCode;
 import lombok.Builder;
 import lombok.Data;
 
