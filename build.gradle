@@ -22,4 +22,10 @@ allprojects {
     repositories {
         mavenCentral()
     }
+
+    dependencies {
+        implementation 'org.apache.httpcomponents:httpclient:4.5.13'
+        implementation 'com.azure:azure-ai-openai:1.0.0-beta.6'
+
+    }
 }
